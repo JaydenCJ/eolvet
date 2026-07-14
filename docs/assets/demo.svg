@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1077" height="398" viewBox="0 0 1077 398" font-family="Menlo, Consolas, monospace" font-size="12">
+  <rect width="1077" height="398" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="538" y="27" fill="#8b949e" text-anchor="middle" font-size="12">eolvet — is anything in this repo already end-of-life?</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62" xml:space="preserve"><tspan fill="#7ee787">$</tspan> eolvet scan --as-of 2026-07-13 /tmp/eolvet-demo</text>
+    <text x="24" y="84" xml:space="preserve"><tspan fill="#79c0ff">eolvet scan</tspan> — /tmp/eolvet-demo (snapshot 2026-06-15, as of 2026-07-13)</text>
+    <text x="24" y="114" xml:space="preserve"><tspan fill="#d2a8ff">STATUS    PRODUCT     CYCLE  EOL         DAYS    WHERE                 DECLARED</tspan></text>
+    <text x="24" y="136" xml:space="preserve"><tspan fill="#f85149">EOL</tspan>       Python      3.8    2024-10-07  <tspan fill="#f85149">-644d</tspan>   Dockerfile:3          python:${PY}-slim-bullseye</text>
+    <text x="24" y="158" xml:space="preserve"><tspan fill="#f85149">EOL</tspan>       PostgreSQL  12     2024-11-14  <tspan fill="#f85149">-606d</tspan>   docker-compose.yml:3  postgres:12</text>
+    <text x="24" y="180" xml:space="preserve"><tspan fill="#f85149">EOL</tspan>       Python      2.7    2020-01-01  <tspan fill="#f85149">-2385d</tspan>  legacy/Dockerfile:1   python:2.7</text>
+    <text x="24" y="202" xml:space="preserve"><tspan fill="#f85149">EOL</tspan>       Node.js     18     2025-04-30  <tspan fill="#f85149">-439d</tspan>   web/.nvmrc:1          18.16.0</text>
+    <text x="24" y="224" xml:space="preserve"><tspan fill="#f85149">EOL</tspan>       Node.js     18     2025-04-30  <tspan fill="#f85149">-439d</tspan>   web/package.json:3    &gt;=18.17 &lt;21  (floor of constraint &gt;=18.17 &lt;21)</text>
+    <text x="24" y="246" xml:space="preserve"><tspan fill="#d29922">EOL-SOON</tspan>  Debian      11     2026-08-31  <tspan fill="#d29922">+49d</tspan>    Dockerfile:3          python:${PY}-slim-bullseye  (base OS of image tag)</text>
+    <text x="24" y="268" xml:space="preserve"><tspan fill="#8b949e">UNKNOWN</tspan>   Redis       —      —           —       docker-compose.yml:5  redis:latest  (unpinned tag; resolves to a different release over time)</text>
+    <text x="24" y="290" xml:space="preserve"><tspan fill="#7ee787">OK</tspan>        Go          1.26   2027-02-09  <tspan fill="#7ee787">+211d</tspan>   go.mod:3              go 1.26  (go directive)</text>
+    <text x="24" y="320" xml:space="preserve">8 declarations: <tspan fill="#f85149">5 eol</tspan>, <tspan fill="#d29922">1 eol-soon</tspan>, <tspan fill="#7ee787">1 supported</tspan>, <tspan fill="#8b949e">1 unknown</tspan></text>
+    <text x="24" y="350" xml:space="preserve"><tspan fill="#7ee787">$</tspan> echo $?</text>
+    <text x="24" y="372" xml:space="preserve"><tspan fill="#f85149">1</tspan>  <tspan fill="#8b949e"># EOL findings gate the build — offline, dated, reproducible</tspan></text>
+  </g>
+</svg>
